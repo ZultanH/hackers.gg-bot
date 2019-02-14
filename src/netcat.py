@@ -34,10 +34,6 @@ class netcat:
         return self.userobj['challenges']
 
     @property
-    def incomplete_challenges(self):
-        pass #do shit here
-
-    @property
     def iscomplete(self):
         if self.challenge and type(self.challenge) is str:
             return self.challenge in self.userobj['challenges']
